@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poetic Alb</title>
+    <link rel="stylesheet" href="./src/custom.css" />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="relative bg-center bg-cover h-screen bg-hero-custom bg-no-repeat"
+    >
+      <div
+        class="flex place-items-start p-3 bg-center justify-center h-screen bg-cover"
+      >
+        <img src="./src/images/logo.png" class="w-[200px] h-auto" />
+      </div>
+      <nav
+        class="absolute flex w-full justify-between items-center text-zinc-800 z-10 left-0 top-0 p-4"
+      >
+        <div>
+          <ul class="flex space-x-4">
+            <li
+              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100"
+            >
+              <a href="./shop.html">Shop</a>
+            </li>
+            <li
+              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100"
+            >
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input
+            type="email"
+            placeholder="Search product"
+            class="flex-grow py-3 px-4 rounded-md text-zinc-900 border-1 border-gray-500 text-sm bg-zinc-300"
+          />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="w-12 hover:bg-gray-400 rounded-lg p-3"
+            >
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div>4 coloane cu poze in care am numele produsului si pretul</div>
+      <section>
+        <div>o poza</div>
+        <div>text</div>
+      </section>
+      <section>about us</section>
+      <footer>
+        2 coloane
+        <div>contact</div>
+        <div>abonare newsletter</div>
+      </footer>
+    </main>
+  </body>
+</html>
