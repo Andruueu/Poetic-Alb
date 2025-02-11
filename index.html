@@ -27,14 +27,22 @@
     />
   </head>
   <body>
-    <header
-      class="relative bg-center bg-cover h-screen bg-hero-custom bg-no-repeat"
-    >
-      <div class="flex place-items-start p-3 bg-center justify-center bg-cover">
-        <img src="./src/images/logo.png" class="w-[200px] h-auto" />
+    <header class="relative w-full h-screen">
+      <img
+        src="./src/images/hero.png"
+        alt="Background"
+        class="absolute top-0 w-full h-full object-cover md:object-cover"
+      />
+      <div
+        class="flex place-items-start p-5 bg-center justify-center bg-cover w-full h-auto"
+      >
+        <img
+          src="./src/images/logo.png"
+          class="absolute w-20 md:w-32 mt-16 md:mt-0"
+        />
       </div>
       <nav
-        class="absolute top-0 flex w-full justify-between items-center text-zinc-900 z-10 left-0 p-4"
+        class="absolute top-0 flex w-full justify-end items-center text-zinc-900 z-10 left-0 p-4"
       >
         <div>
           <ul
@@ -42,44 +50,39 @@
             style="font-family: playfair display"
           >
             <li
-              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100"
+              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100 block px-4"
             >
               <a href="./index.html">Home</a>
             </li>
             <li
-              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100"
+              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100 block px-4"
             >
               <a href="./shop.html">Shop</a>
             </li>
             <li
-              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100"
+              class="hover:bg-gray-600 p-3 rounded-2xl text hover:text-indigo-100 block px-4"
             >
               <a href="./contact.html">Contact</a>
             </li>
+            <div class="flex flex-col sm:flex-col gap-3">
+              <button class="flex text-right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="w-12 hover:bg-gray-400 rounded-lg p-3"
+                >
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </button>
+            </div>
           </ul>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <input
-            type="email"
-            placeholder="Search product"
-            class="flex-grow py-3 px-4 rounded-md text-zinc-900 border-1 border-gray-500 text-sm bg-zinc-300"
-          />
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              class="w-12 hover:bg-gray-400 rounded-lg p-3"
-            >
-              <path
-                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-              />
-            </svg>
-          </button>
         </div>
       </nav>
     </header>
     <main>
-      <section class="bg-[#c5c6c7] p-7">
+      <section class="bg-[#c5c6c7] p-7 text-sm md:text-lg">
         <div>
           <h1
             class="text-center text-7xl font-medium p-5 text-zinc-800"
@@ -138,10 +141,10 @@
       </section>
       <img src="./src/images/10.png" />
       <section
-        class="bg-[#909090] text-gray-200 grid grid-cols-2 gap-8 p-8 tracking-tighter"
+        class="bg-[#909090] text-gray-200 grid grid-cols-1 md:grid-cols-2 gap-8 p-8 tracking-tighter"
         style="font-family: lexend giga"
       >
-        <div class="content-center">
+        <div class="content-center text-sm md:text-lg">
           <h2 class="text-3xl font-semibold text-center">CHAPTER 1</h2>
           <h3
             class="text-8xl lowercase font-medium py-10"
@@ -171,8 +174,11 @@
             lightly…
           </p>
         </div>
-        <div class="w-full h-auto">
-          <img src="./src/images/section1.jpg" class="rounded-xl shadow-lg" />
+        <div>
+          <img
+            src="./src/images/section1.jpg"
+            class="rounded-xl shadow-lg w-full h-auto"
+          />
         </div>
       </section>
       <section class="bg-[#909090] grid grid-cols-4 gap-8 p-6">
@@ -218,9 +224,11 @@
         </div>
       </section>
 
-      <footer class="grid grid-row-1 gap-8 p-15 bg-[#909090]">
+      <footer class="bg-[#909090] text-base md:text-lg lg:text-xl">
         <hr />
-        <div class="grid grid-cols-2 gap-20 p-8 text-zinc-900 font-semibold">
+        <div
+          class="grid grid-cols-2 md:grid-cols-2 gap-20 p-8 text-zinc-900 font-semibold"
+        >
           <div
             class="text-3xl font-medium"
             style="font-family: playfair display"
@@ -260,7 +268,7 @@
             </div>
           </div>
         </div>
-        <ul class="flex px-8" role="list" style="gap: 10px">
+        <ul class="flex px-8 py-3" role="list" style="gap: 10px">
           <li class="footer-payment__item">
             <svg
               class="icon icon--full-color"
